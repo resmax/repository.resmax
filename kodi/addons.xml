@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addons>
-    <addon id="repository.resmax" name="ResMax repository" version="2021.07.08.3" provider-name="ResMax">
+    <addon id="repository.resmax" name="ResMax repository" version="2021.07.11.0" provider-name="ResMax">
         <requires>
             <import addon="xbmc.addon" version="12.0.0"/>
         </requires>
@@ -17,10 +17,12 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.resmax.livetv" name="LiveTV" version="2021.07.08.3" provider-name="Resmax">
+<addon id="plugin.video.resmax.livetv" name="LiveTV" version="2021.07.11.0" provider-name="Resmax">
   <requires>
     <import addon="xbmc.python" version="3.0.0"/>
     <import addon="plugin.video.youtube" version="1.0.0"/>
+    <import addon="script.module.beautifulsoup4" version="4.0.0"/>
+    <import addon="script.module.requests" version="2.0.0"/>
   </requires>
   <extension point="xbmc.python.pluginsource" library="addon.py">
         <provides>video</provides>
